@@ -50,6 +50,7 @@ const AddTodoScreen = () => {
         style={styles.inputTextStyle}
         value={title}
         placeholder={constants.typeSomething}
+        placeholderTextColor={'black'}
       />
       <CheckBoxText
         title={"Completed"}
@@ -73,9 +74,9 @@ export default memo(AddTodoScreen);
 
 const styles = StyleSheet.create({
   main: { flex: 1, justifyContent: "center", alignItems: "center" },
-  inputTextStyle: { borderWidth: 1, width: "80%", borderRadius: 10 },
+  inputTextStyle: { borderWidth: 1, width: "80%", borderRadius: 10 ,color:"black"},
   chechkBoxView: { flexDirection: "row", alignItems: "center", width:'50%',borderWidth: 0 },
-  checkboxTextStyle: { fontSize: 20, fontWeight: "bold" },
+  checkboxTextStyle: { fontSize: 20, fontWeight: "bold" ,color:'black' },
   updateButton: {
     height: 40,
     width: 100,

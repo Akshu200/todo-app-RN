@@ -46,5 +46,5 @@ const styles = StyleSheet.create({
     borderColor: "grey",
     marginVertical: 5,
   },
-  textStyle: { fontSize: 15, fontWeight: "bold" },
+  textStyle: { fontSize: 15, fontWeight: "bold",color:'black'  },
 });

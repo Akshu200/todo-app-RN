@@ -113,7 +113,7 @@ const ListRenderItem = ({ index, item }: { index: number; item: todoListItem }) 
     >
       <View style={styles.titleViewStyle}>
         <Text
-          style={{ width: "70%", fontSize: 18 }}
+          style={{ width: "70%", fontSize: 18,color:'black' }}
           numberOfLines={2}
         >{` Title: ${item?.title}`}</Text>
         <CheckBox
@@ -138,11 +138,11 @@ const ListRenderItem = ({ index, item }: { index: number; item: todoListItem }) 
           loading={deleteLaoding}
         />
       </View>
-      <View style={{ flexDirection: "column", marginVertical: 10 }}>
-        <Text>{`Created At: ${timeConvert(item?.created_at)}`}</Text>
+      <View style={{ flexDirection: "column", marginVertical: 10, }}>
+        <Text style={{color:'black' }}>{`Created At: ${timeConvert(item?.created_at)}`}</Text>
         <View style={{ flexDirection: "row" }}>
-          <Text>Updated At:</Text>
-          <Animatable.Text ref={textRef}>{`${timeConvert(
+          <Text style={{color:'black' }}>Updated At:</Text>
+          <Animatable.Text ref={textRef} style={{color:'black' }}>{`${timeConvert(
             item?.updated_at
           )}`}</Animatable.Text>
         </View>

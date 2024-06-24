@@ -35,6 +35,6 @@ const HeaderText = () => {
 export default HeaderText;
 
 const styles = StyleSheet.create({
-  textStyle: { fontSize: 20 },
+  textStyle: { fontSize: 20 ,color:"black"},
   viewStyle: { flexDirection: "row", alignItems: "center" },
 });
